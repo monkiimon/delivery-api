@@ -28,3 +28,29 @@ $ yarn dev
 | --------------- | ---------------------------------------------- |
 | Routes Cost     | http://localhost:9000/api/v1/delivery/cost     |
 | Possible Routes | http://localhost:9000/api/v1/delivery/possible |
+
+### Test API Endpoint
+
+Routes Cost\
+http://localhost:9000/api/v1/delivery/cost \
+by http POST method with body\
+example body
+
+```
+{
+  "route": "E-A-C-F"
+}
+```
+
+Possible Routes\
+http://localhost:9000/api/v1/delivery/possible \
+by http POST method with body\
+example body
+
+```
+{
+	"start": "E",
+	"end": "D",
+	"maxRoutes": 4
+}
+```
